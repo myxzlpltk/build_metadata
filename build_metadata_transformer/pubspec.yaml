@@ -1,0 +1,13 @@
+name: build_metadata_transformer
+description: A package that transform/create all metadata and save it into assets
+version: 1.0.0
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  args: ^2.5.0
+
+dev_dependencies:
+  test: ^1.24.0
+  very_good_analysis: ^5.1.0

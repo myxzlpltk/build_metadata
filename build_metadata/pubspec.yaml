@@ -1,0 +1,26 @@
+name: build_metadata
+description: "A package to get build metadata using assets transformer"
+version: 0.0.1
+homepage: https://pub.dev/packages/build_metadata
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=3.22.0"
+
+dependencies:
+  async: ^2.11.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  build_metadata_transformer:
+    path: ../build_metadata_transformer
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^5.1.0
+
+flutter:
+  assets:
+    - path: assets/metadata.json
+      transformers:
+        - package: build_metadata_transformer
